@@ -1,0 +1,21 @@
+<div class="order-table">
+    <div class="headers-container">
+        <div class="header">Order ID</div>
+        <div class="header">Order Time</div>
+        <div class="header">Name</div>
+        <div class="header">Restaurant</div>
+        <div class="header">Number of people</div>
+        <div class="header">Reservation Time</div>
+        <div class="header">Status</div>
+    </div>
+    <div *ngFor="let order of orders" class="orders-container">
+        <div class="entry">{{order.orderId}}</div>
+        <div class="entry">{{order.timePlaced | dateTime}}</div>
+        <div class="entry">{{order.name}}</div>
+        <div class="entry">{{order.restaurant}}</div>
+        <div class="entry">{{order.noPeople}}</div>
+        <div class="entry">{{order.time | dateTime}}</div>
+        <div class="entry">{{order.status}}</div>
+    </div>
+    <button (click)="addOrder()">Clicky</button>
+</div>

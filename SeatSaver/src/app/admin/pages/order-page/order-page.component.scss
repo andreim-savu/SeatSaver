@@ -1,0 +1,32 @@
+.order-table {
+    width: 80%;
+    margin: auto;
+
+    .headers-container {
+        display: flex;
+        justify-content: space-around;
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 30px;
+            border: 1px solid black;
+        }
+    }
+
+    .orders-container {
+        display: flex;
+        justify-content: space-around;
+
+        .entry {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 30px;
+            border: 1px solid black;
+        }
+    }
+}
